@@ -1,9 +1,12 @@
 # RTM_playground
 
 
+## References :
 
+**Readings** :
 
-zkdj
+1. Ways of Being, James Bridle
 
+**Listening** :
 
-d,mlzdk
+1. NEW MODELS, YT channel --> https://www.youtube.com/@NewModelsTV 
