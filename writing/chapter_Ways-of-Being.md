@@ -57,4 +57,16 @@
 
 ![The_homeostat](./data/The-homeostat.png)
 
+- "Lorsqu'il a relié quatre de ces unités entre elles, Ashby a constaté qu'elles essayaient d'ajuster leurs paramètres jusqu'à ce qu'elles atteignent une sorte de stabilité les unes par rapport aux autres - leurs entrées et leurs sorties fluctuant jusqu'à ce qu'elles parviennent à l'équilibre. En outre, lorsque l'une d'entre elles était perturbée, l'ensemble du système se réajustait jusqu'à ce que la stabilité soit rétablie. Ashby a appelé cette capacité "ultrastabilité adaptative". Quoi que fassent ses collègues pour perturber la machine - en intervertissant les connexions, en inversant les fils positifs et négatifs, en attachant ensemble les bras magnétiques oscillants ou en bloquant leur mouvement - l'ultrastabilité s'est maintenue. a toujours retrouvé un état stable."
+
+- "C'est cette capacité à s'autocorriger et à trouver de nouveaux modèles stables qui a conduit Ashby à décrire ces unités comme des sortes de cerveaux artificiels : il les a en effet comparées à l'esprit non développé d'un chaton. Lorsqu'il est jeune, le chaton ne sait pas que la viande rouge est bonne et que le feu rouge est mauvais, mais les réactions positives et négatives le remettent rapidement dans le droit chemin, créant ainsi un modèle de comportement mémorisé."
+
+- "Walter (Grey Walter) a été impressionné par l'homéostat, mais il l'a trouvé limité, "comme une créature endormie qui, lorsqu'elle est dérangée, s'agite et trouve une position confortable".11 Contrairement à l'homéostat, ses tortues étaient mobiles et exploratrices : elles n'attendaient pas que leur équilibre soit rompu, mais se déplaçaient à la recherche de problèmes."
+
+- "Pour programmer une machine, il suffit de lancer dans le monde un système capable de réagir de façon nouvelle et de le laisser s'adapter. C'était le principe central de la cybernétique : s'adapter au monde était une approche plus puissante et plus appropriée que d'essayer de l'anticiper et de le contrôler."
+
+- "L'intérêt de l'homéostat et des tortues est qu'ils s'adaptent à leur environnement au fur et à mesure qu'ils le rencontrent. Combien de fois est-ce l'objectif de nos technologies ? Nous considérons la technologie avant tout comme une solution aux problèmes auxquels nous sommes confrontés (y compris, trop souvent, ceux que nous avons créés). Mais Walter, Ashby et les autres cybernéticiens de la première heure voyaient la technologie comme quelque chose de très différent : quelque chose doté de sa propre agence et de ses propres capacités, dont les réactions étaient incertaines et dont le comportement devait refléter ses propres rencontres avec le monde."
+
 - ""
+
+
