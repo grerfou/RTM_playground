@@ -67,6 +67,16 @@
 
 - "L'intérêt de l'homéostat et des tortues est qu'ils s'adaptent à leur environnement au fur et à mesure qu'ils le rencontrent. Combien de fois est-ce l'objectif de nos technologies ? Nous considérons la technologie avant tout comme une solution aux problèmes auxquels nous sommes confrontés (y compris, trop souvent, ceux que nous avons créés). Mais Walter, Ashby et les autres cybernéticiens de la première heure voyaient la technologie comme quelque chose de très différent : quelque chose doté de sa propre agence et de ses propres capacités, dont les réactions étaient incertaines et dont le comportement devait refléter ses propres rencontres avec le monde."
 
+- "Pour certains, le critère essentiel pour déterminer si une machine est ou non un `cerveau` serait de savoir si elle peut ou non `penser`. Mais pour le biologiste, le cerveau n'est pas une machine à penser, c'est une machine à agir."
+
+- "Comme le dit l'historien de la cybernétique Andrew Pickering : L'étrangeté de la cybernétique apparaît ici clairement."
+
+- "elle se préoccupe de la manière dont la boîte fonctionne et des relations qui se forment lorsqu'elle entre en jeu avec le monde. La cybernétique ne se préoccupe pas de ce qui se trouve dans la boîte noire : elle se préoccupe de la manière dont la boîte fonctionne et des relations qui se forment lorsqu'elle entre en jeu avec le monde. En tant que telle, c'est une façon de penser à des esprits plus qu'humains qui correspond étroitement à notre rejet de la pensée hiérarchique, anthropocentrique et "intelligente" et à notre volonté d'améliorer la qualité de notre vie. de l'être agentiel et relationnel."
+
+- "S'appuyant sur les travaux d'Ashby et de Walter, Beer (Stafford Beer) a mené des recherches approfondies sur d'autres méthodes de construction de machines, des méthodes qui permettraient une réponse rapide, un retour d'information, un changement et une adaptation. Le résultat est l'une des œuvres les plus étranges du XXe siècle, dans laquelle des expériences bizarres avec des intelligences autres qu'humaines ont été menées au cœur de l'industrie britannique traditionnelle et à la pointe de la politique radicale."
+
+- "Beer s'est vu confier la tâche d'automatiser l'une de ses usines. Beer pensait que l'un des moyens de réaliser cet exercice d'équilibre était d'utiliser le dispositif de rétroaction d'Ashby, l'homéostat - représenté par les flèches en boucle au bas d'un diagramme que Beer a publié sur l'usine cybernétique. Beer pensait que l'un des moyens de parvenir à cet équilibre était d'utiliser le dispositif de rétroaction d'Ashby, l'homéostat - représenté par les flèches en boucle au bas d'un diagramme de l'usine cybernétique publié par Beer en 1962. Intégré dans un réseau de capteurs et d'effecteurs, l'homéostat devait constamment aligner les différentes entrées et sorties de manière plus efficace et plus productive, et reconfigurer ses processus en conséquence. Beer a désigné ce cerveau cybernétique sous le nom d'U- Machine."
+
+- "Comment concevoir une machine qui répondra à des situations entièrement nouvelles, lorsque le système d'information de l'entreprise ne sera pas en mesure de répondre aux besoins de l'utilisateur ?"
+
 - ""
-
-
