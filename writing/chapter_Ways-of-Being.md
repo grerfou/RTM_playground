@@ -49,4 +49,12 @@
 
 - "La capacité la plus frappante des tortues a été produite de manière tout à fait inattendue par l'ajout d'un petit écran lumineux sur leur dos, destiné à indiquer que leur moteur était en marche. Immédiatement, les machines ont affiché un nouveau comportement : à l'approche d'un miroir ou d'une autre surface réfléchissante, elles apercevaient leur propre lumière et commençaient immédiatement à se secouer devant leur propre reflet `d'une manière si spécifique`, écrit Walter, `que si c'était un animal, un biologiste serait justifié de lui attribuer une capacité d'autodiscipline`."
 
+- "Vingt ans avant sa définition officielle, les tortues ont passé le test du miroir. Walter opposait ses tortues aux premiers ordinateurs, qui, ne connaissant qu'un langage de uns et de zéros et dépourvus de sens au-delà de l'entrée directe de données, étaient, selon lui, "en aucun cas libres comme le sont la plupart des animaux;"
+
+- "Cette idée, selon laquelle la technologie pourrait être capable de s'adapter à son environnement, était au cœur de la cybernétique, un domaine d'étude né après la Seconde Guerre mondiale et qui, depuis lors, a rassemblé un groupe hétéroclite de scientifiques, de chercheurs, de psychiatres, d'artistes et d'énergumènes sous son égide. Définie en 1948 comme "l'étude scientifique du contrôle et de la communication chez l'animal et dans la machine", la cybernétique a par la suite traversé les disciplines, influençant les études sur l'apprentissage, la cognition, l'auto-organisation, la rétroaction biologique, la robotique et la gestion d'entreprise, sans jamais se fondre dans un discours fixe ou s'installer confortablement dans un milieu universitaire unique département."
+
+- "Cet appareil avait été conçu quelques années plus tôt par un autre psychiatre anglais, W. Ross Ashby, qui a souvent décrit sa création comme un cerveau artificiel. En fait, l'homéostat consistait en un ensemble de quatre unités de contrôle de bombes de la Royal Air Force, câblées ensemble pour réagir aux entrées et sorties de chacune d'entre elles. Ces unités avaient été développées pendant la guerre en tant que dispositifs de rétroaction automatisés, qui réagissaient à un signal entrant en augmentant ou en diminuant un autre signal."
+
+![The_homeostat](./data/The-homeostat.png)
+
 - ""
