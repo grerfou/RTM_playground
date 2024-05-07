@@ -18,7 +18,6 @@ My note about the chapter "Non binary Machine" of the books --> Ways of Being --
 
 
 
+#### [TODO](./TODO)
 
 
-
-next seminar --> 21 may --> TODO in RTM_Notion 
