@@ -19,7 +19,7 @@ Bien que les machines ont évoluer, le processus de lecture/stockage/réecriture
  A chaque fois que vous ouvré un mail, que vous taper sur un clavier, que vous retirer de l'argent dans un distributeur, que vous écouter une chanson numérique, que vous regarder un filml en streaming ou que vous voyer a travers d'un sattellite, vous travailler avec une incarnation d'une machine de Turing. 
 `"J'écrit ces lignes sur une machione de Turing, il y de forte chance que vous lisier ces lignes sur une machine de turing (et si ce n'est pas le cas, de nombreuse machines ont été necéssaire pour produire ce que vous avez dans vos main)."`
 Les ordinateurs imaginer par Turing sont onmiprésent dans tout les aspect de notre vie, mais leur omniprésence masque une prise de conscience, `presque tout les ordinateurs qui fonctionne aujourd'hui ne représente qu'une infime partie de ce que les ordinateurs pourrait etre`.
-Dans sont article de 1939 Turing dis de sa machine a-machine, sela signifie `machine automatique`, il le précise c'est parcequ'il souligne le fait qu'une fois la machine en marche sa production dépend entiérement determiner par sa configuration d'origine. 
+Dans sont article de 1939 Turing dis de sa machine a-machine, sela signifie `machine automatique`, il le précise c'est parcequ'il souligne le fait qu'une fois la machine en marche sa production dépend entiérement determiner par sa configuration d'origine, la machine ne fait que se qu'on lui dit de faire. Dans ce meme article il dit aussi qu'il 
 
 
 
@@ -34,9 +34,4 @@ Dans sont article de 1939 Turing dis de sa machine a-machine, sela signifie `mac
 
 
 
-
-Room meet Duk Hee
-|
-|
-3...4
 
