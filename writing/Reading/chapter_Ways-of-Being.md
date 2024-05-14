@@ -55,7 +55,7 @@
 
 - "Cet appareil avait été conçu quelques années plus tôt par un autre psychiatre anglais, W. Ross Ashby, qui a souvent décrit sa création comme un cerveau artificiel. En fait, l'homéostat consistait en un ensemble de quatre unités de contrôle de bombes de la Royal Air Force, câblées ensemble pour réagir aux entrées et sorties de chacune d'entre elles. Ces unités avaient été développées pendant la guerre en tant que dispositifs de rétroaction automatisés, qui réagissaient à un signal entrant en augmentant ou en diminuant un autre signal."
 
-- ![The_homeostat](./data/The-homeostat.png)
+- ![The_homeostat](./../data/The-homeostat.png)
 
 - "Lorsqu'il a relié quatre de ces unités entre elles, Ashby a constaté qu'elles essayaient d'ajuster leurs paramètres jusqu'à ce qu'elles atteignent une sorte de stabilité les unes par rapport aux autres - leurs entrées et leurs sorties fluctuant jusqu'à ce qu'elles parviennent à l'équilibre. En outre, lorsque l'une d'entre elles était perturbée, l'ensemble du système se réajustait jusqu'à ce que la stabilité soit rétablie. Ashby a appelé cette capacité "ultrastabilité adaptative". Quoi que fassent ses collègues pour perturber la machine - en intervertissant les connexions, en inversant les fils positifs et négatifs, en attachant ensemble les bras magnétiques oscillants ou en bloquant leur mouvement - l'ultrastabilité s'est maintenue. a toujours retrouvé un état stable."
 
