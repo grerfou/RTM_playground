@@ -24,6 +24,7 @@
 **Term**
 
 - `Informatique non conventionnelle`
+- `Programmation esotérique`
 
 ## Notes :
 
