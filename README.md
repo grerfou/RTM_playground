@@ -18,6 +18,12 @@
 - William Grey Walter
 - W. Ross Ashby
 - Ludvig Wittgenstein
+- Andrew Pickering 
+- Stafford Beer 
+
+**Term**
+
+- `Informatique non conventionnelle`
 
 ## Notes :
 
