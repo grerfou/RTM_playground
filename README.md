@@ -26,6 +26,10 @@
 - `Informatique non conventionnelle`
 - `Programmation esotérique`
 
+**Hardware/Object**
+
+- Memsitor 
+
 ## Notes :
 
 My note about the chapter "Non binary Machine" of the books --> Ways of Being --> [Here](./writing/chapter_Ways-of-Being.md)
