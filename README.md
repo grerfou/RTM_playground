@@ -22,6 +22,10 @@
 - Andrew Pickering 
 - Stafford Beer 
 
+**Project** :
+
+- [Flocks of assembler robots show potential for making larger structures ](https://news.mit.edu/2022/assembler-robots-structures-voxels-1122)
+
 **Term** :
 
 - `Informatique non conventionnelle`
