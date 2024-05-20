@@ -45,7 +45,7 @@
 
 ## Notes :
 
-My note about the chapter "Non binary Machine" of the books --> Ways of Being --> [Here](./writing/chapter_Ways-of-Being.md)
+My note about the chapter "Non binary Machine" of the books --> Ways of Being --> [Here](./writing/Reader/chapter_Ways-of-Being.md) 
 
 **Def** :
 
