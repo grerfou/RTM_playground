@@ -14,7 +14,7 @@ Ce champ de la robotique semble susciter depuis le début du XXIe siècle un int
 
 ## Récit 
 
-**"Comme la robotique molle utilise des systèmes de motorisation totalement différents, elle est beaucoup plus difficile à contrôler. Certains se musclent, c'est-à-dire qu'ils dilatent ou compriment certaines parties de leur corps pour se développer dans différentes directions, comme une plante ou un animal."**
+**"Comme la robotique molle utilise des systèmes de motorisation totalement différents, elle est beaucoup plus difficile à contrôler. Certains se musclent, c'est-à-dire qu'ils dilatent ou compriment certaines parties de leur corps pour se développer dans différentes directions, comme une plante ou un animal."**  
 Way of being, Non binary machine --> James Bridle
 
 
