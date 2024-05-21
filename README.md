@@ -46,6 +46,7 @@
 ## Notes :
 
 My note about the chapter "Non binary Machine" of the books --> Ways of Being --> [Here](./writing/Reading/chapter_Ways-of-Being.md) 
+Informatique de reservoir et robotique molle --> [Here](./writing/Reservoir_Robotique.md)
 
 **Def** :
 
