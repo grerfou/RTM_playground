@@ -17,11 +17,14 @@ Ce champ de la robotique semble susciter depuis le début du XXIe siècle un int
 **"Comme la robotique molle utilise des systèmes de motorisation totalement différents, elle est beaucoup plus difficile à contrôler. Certains se musclent, c'est-à-dire qu'ils dilatent ou compriment certaines parties de leur corps pour se développer dans différentes directions, comme une plante ou un animal."**  
 Way of being, Non binary machine --> James Bridle
 
+## Reference
+
+- Binary Viz ,Tsoding [Repo](https://github.com/tsoding/binviz), [YT Video](https://www.youtube.com/watch?v=4bM3Gut1hIk)
 
 ## Questions :
 
 - Comment une données se mouve t-elle ? 
-- Comme [SoftZoo](https://sites.google.com/view/softzoo-iclr-2023/design-space-representation) est t-il possible de vilualizer le mouvement d'une donnée dans un "basssin" ? 
+- Comme [SoftZoo](https://sites.google.com/view/softzoo-iclr-2023/design-space-representation) est t-il possible de vilualizer le mouvement d'une donnée dans un "basssin" ou sur d'autre "matieres" (sable, neige, terre, glace etc..)? 
 
 
 ## Ecriture 
@@ -29,4 +32,6 @@ Way of being, Non binary machine --> James Bridle
 
 ### Premier jets d'idées 
 
-Si 
+Si on prend l'exemple du projet SoftZoo il ont simuler de maniere informatique le movement de deplacement de certain animaux pour essayer de transcrire dans un mouvement en soft Robotique, aprés cela ils ont ajouter a cette simulation de mouvement un environnement pour visualiser les traces laisser part les mouvement produit, cette experience pourrait aussi bien ressembler à de l'informatique de reservoir. 
+Si l'on  considérent toute les données d'un ordinateurs comme une "une particule/un organisme" alors il serait peut etre possible comme dans l'experience de SoftZoo d'en faire des vizualisation, La vizualization de donnée binaire ne serait t-elle pas un point de depart ?  
+Dans le projet de Tsoding on peut voir qu'avec un programme de vizualition de données binaires, selon le/les types de fichiers la vizalisation change de tout au tout. Mais si l'on inversait le processus ... Si on simaulais des mouvement qui créeraient des actions ? 
