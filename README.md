@@ -29,6 +29,8 @@
 - [Flocks of assembler robots show potential for making larger structures ](https://news.mit.edu/2022/assembler-robots-structures-voxels-1122)
 - [SoftZoo: A Soft Robot Co-design Benchmark For Locomotion In Diverse Environments ](https://sites.google.com/view/softzoo-iclr-2023/home)
 - [Soft assistive robotic wearables get a boost from rapid design tool](https://news.mit.edu/2022/soft-assistive-robotic-wearables-get-boost-rapid-design-tool-0503)
+- [Agnes Meyer-Brandis -> Microfluid Oracle Chip & Autopoesis Answering Machine (MOC&AAM) ](http://www.blubblubb.net/oracle/index.html)
+- [Su Yu Hsin](https://www.suyuhsin.net/SU-Yu-Hsin)
 
 **Term** :
 
