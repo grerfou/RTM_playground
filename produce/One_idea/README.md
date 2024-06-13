@@ -1,6 +1,8 @@
 # One Ideas 
 
 
+## French version 
+
 L'idée de ce programe est de s'appuyers sur le concept de o-machine et de a-machine, en partant du proncipe que l'a-machine est presente dans tout les aspect de notre vie.  
   
   
