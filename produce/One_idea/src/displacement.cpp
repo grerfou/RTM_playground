@@ -1,18 +1,24 @@
 #include "displacement.h"
+#include <iostream>
 
-Image GenerateDisplacementMap(Image image) {
-    Image displacement = GenImageColor(image.width, image.height, BLACK);
+Image GenerateDisplacementMap(Image image, int newWidth, int newHeight) {
+    Image displacement = GenImageColor(newWidth, newHeight, BLACK);
 
-    for (int y = 0; y < image.height; y++) {
-        for (int x = 0; x < image.width; x++) {
-            Color pixel = GetImageColor(image, x, y);
-            unsigned char brightness = (pixel.r + pixel.g + pixel.b) / 2.5;
+    float scaleX = (float)newWidth / image.width;
+    float scaleY = (float)newHeight / image.height;
 
-      // 2.5
-            unsigned char brightnessRight = (x < image.width - 1) ? 
-                (GetImageColor(image, x + 1, y).r + GetImageColor(image, x + 1, y).g + GetImageColor(image, x + 1, y).b) / 3 : brightness;
-            unsigned char brightnessDown = (y < image.height - 1) ? 
-                (GetImageColor(image, x, y + 1).r + GetImageColor(image, x, y + 1).g + GetImageColor(image, x, y + 1).b) / 3 : brightness;
+    for (int y = 0; y < newHeight; y++) {
+        for (int x = 0; x < newWidth; x++) {
+            int originalX = (int)(x / scaleX);
+            int originalY = (int)(y / scaleY);
+
+            Color pixel = GetImageColor(image, originalX, originalY);
+            unsigned char brightness = (pixel.r + pixel.g + pixel.b) / 2;
+
+            unsigned char brightnessRight = (originalX < image.width - 1) ?
+                (GetImageColor(image, originalX + 1, originalY).r + GetImageColor(image, originalX + 1, originalY).g + GetImageColor(image, originalX + 1, originalY).b) / 3 : brightness;
+            unsigned char brightnessDown = (originalY < image.height - 1) ?
+                (GetImageColor(image, originalX, originalY + 1).r + GetImageColor(image, originalX, originalY + 1).g + GetImageColor(image, originalX, originalY + 1).b) / 3 : brightness;
 
             int gradientX = brightnessRight - brightness;
             int gradientY = brightnessDown - brightness;
@@ -25,3 +31,4 @@ Image GenerateDisplacementMap(Image image) {
     }
     return displacement;
 }
+

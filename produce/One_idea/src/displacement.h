@@ -3,7 +3,7 @@
 
 #include "raylib.h"
 
-Image GenerateDisplacementMap(Image image);
+Image GenerateDisplacementMap(Image image, int newWidth, int newHeight);
 
 #endif // DISPLACEMENT_H
 

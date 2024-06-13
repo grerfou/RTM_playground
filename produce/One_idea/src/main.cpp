@@ -1,24 +1,45 @@
 #include "raylib.h"
 #include "displacement.h"
 #include "binary_conversion.h"
+#include "scene.h"
+
+Scene3D scene;
+
+float scaleFactor = 0.018f;
+float displacementScale = -0.25f;
+int step = 3;
+
+
+float totalRotation = 10.0f;
+float rotationSpeed = 0.005f;
+
+int ImageWidth = 1024;
+int ImageHeight= 1024;
 
 int main() 
 {
-  InitWindow(800, 600, "Displacement Map Generation");
+    InitWindow(1750, 1050, "Displacement Map Generation");
 
-  Image image = LoadImage("./data/input.png");
-  Image displacement = GenerateDisplacementMap(image);
+    Image image = LoadImage("ressources/images/d.png");
+    Image displacement = GenerateDisplacementMap(image, ImageWidth, ImageHeight);
 
-  ExportImage(displacement, "./data/displacement.png");
+    ExportImage(displacement, "ressources/displacement/displacement.png");
+    ConvertImageToBinary("ressources/displacement/displacement.png", "ressources/bin/displacement.bin");
 
-  ConvertImageToBinary("./data/displacement.png", "./data/displacement.bin");
+    UnloadImage(image);
+    UnloadImage(displacement);
 
-  UnloadImage(image);
-  UnloadImage(displacement);
+    InitScene3D(&scene);
 
-  CloseWindow();
+    while (!WindowShouldClose())
+    {
+        totalRotation += rotationSpeed;
+        DrawScene3D(&scene, scaleFactor, displacementScale, totalRotation, step);
+    }
 
-  return 0;
+    UnloadScene3D(&scene);
+    CloseWindow();
+
+    return 0;
 }
-
 
