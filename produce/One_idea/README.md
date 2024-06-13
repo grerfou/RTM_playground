@@ -1,8 +1,10 @@
 # One Ideas 
 
 
-L'idée de ce programe est de s'appuyers sur le concept de o-machine et de a-machine, en partant du proncipe que l'a-machine est presente dans tout les aspect de notre vie.
-
+L'idée de ce programe est de s'appuyers sur le concept de o-machine et de a-machine, en partant du proncipe que l'a-machine est presente dans tout les aspect de notre vie.  
+  
+  
+  
 """  
 
 Le chapiter commence par expliquer que nos culture nous disent comment penser et comment fonctionner. et que ce probleme est agraver par la technologie qui nous fait voir le monde d'une certaine maniere et qu'il est trés difficile de changer de point de vue une fois que l'on à deja une vision trés precise des choses (du monde).
@@ -13,8 +15,9 @@ Aujourd'hui nous connaissons seulement ce type d'ordinateur mais ces machines qu
 
 """"  
 Mes notes about Non Binary Machine of the books Ways of Being
-
-
+  
+  
+  
 En partant de cette idée je decide de  crée un processus de traitement de donnée qui en déclinera des formes différenrtes a partir de données similaire, ces données proviendront d'une a-machine en temps réel ce qui nous donne un jeu de données en constante evolution et un relustat de declination de forme qu "vie". 
 Dans cette installation c'est l'o-machine que fait que l'ont a de vraie resultat en constante evolution, l'a-mache n'est la que pour transformer cette evolution constante en "données" comprehenssible pour les transformer en des chose plus tangible
 
@@ -27,8 +30,10 @@ Ma question a propot de tout cela aujourd'hui est, est-il poissible d'inverser c
 ## English version 
 
 
-The idea of this programme is to build on the concept of o-machine and a-machine, starting from the premise that the a-machine is present in every aspect of our lives.
-
+The idea of this programme is to build on the concept of o-machine and a-machine, starting from the premise that the a-machine is present in every aspect of our lives.  
+  
+  
+  
 """
 
 The chapter begins by explaining that our culture tells us how to think and how to function, and that this problem is exacerbated by technology, which makes us see the world in a certain way, and that it is very difficult to change our point of view once we already have a very precise vision of things (of the world).
@@ -37,8 +42,11 @@ The problem is really acute if we're talking about computers, because they shape
 
 Today we only know this type of computer but these machines that we use everywhere today are the result of a chain of decisions some of which go back a thousand years, all these decisions have shaped "the computer" under the name that we know today. All these ideas, inventions and designs have led to a uniform result in the way we design computers today, and therefore to a uniformity of thought when we use them to think. To change our view of the world and the way we use our computers today, we'll need to rethink the shape of computers themselves, and in doing so we may have new ideas and new ways of reaching out to the more-than-human world.
 
-"""" My notes about Non Binary Machine of the books Ways of Being
-
+""""  
+My notes about Non Binary Machine of the books Ways of Being  
+  
+  
+  
 Starting from this idea I decided to create a process of data treatment which will decline different forms from similar data, these data will come from a machine in real time which gives us a set of data in constant evolution and a state of declination of form that "life". In this installation it's the o-machine that gives us real results in constant evolution, the a-mache is only there to transform this constant evolution into comprehensible "data" to transform them into more tangible things.
 
 My question in the light of all this today is, is it possible to reverse this process?
