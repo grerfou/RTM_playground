@@ -57,8 +57,6 @@ Informatique de reservoir et robotique molle --> [Here](./writing/Reservoir_Robo
 L'homéostat est l'un des premiers dispositifs capables de s'adapter à l'environnement ; il a présenté des comportements tels que l'habituation, le renforcement et l'apprentissage grâce à sa capacité à maintenir l'homéostasie dans un environnement changeant. Il a été construit par William Ross Ashby en 1948 à l'hôpital Barnwood House.
 
 
-
-
 #### [TODO](./TODO)
 
 
