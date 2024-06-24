@@ -1,6 +1,8 @@
 #include "displacement.h"
 #include <iostream>
 
+/*
+
 Image GenerateDisplacementMap(Image image, int newWidth, int newHeight) {
     Image displacement = GenImageColor(newWidth, newHeight, BLACK);
 
@@ -30,5 +32,48 @@ Image GenerateDisplacementMap(Image image, int newWidth, int newHeight) {
         }
     }
     return displacement;
+}
+
+*/
+
+
+Image GenerateDisplacementMap(Image image, int newWidth, int newHeight) {
+    // Copier l'image pour la redimensionner
+    Image resizedImage = ImageCopy(image);
+    ImageResize(&resizedImage, newWidth, newHeight);
+
+    // Obtenir les dimensions de l'image redimensionnée
+    int width = resizedImage.width;
+    int height = resizedImage.height;
+
+    // Créer une nouvelle image pour la carte de déplacement
+    Image displacementImage = GenImageColor(width, height, BLACK);
+
+    // Accéder aux données des pixels de l'image d'entrée
+    Color* inputPixels = LoadImageColors(resizedImage);
+    if (!inputPixels) {
+        std::cerr << "Erreur : Impossible de charger les couleurs de l'image." << std::endl;
+        UnloadImage(resizedImage);
+        return displacementImage; // Retourne l'image vide de déplacement
+    }
+
+    // Accéder aux données des pixels de l'image de déplacement
+    Color* displacementPixels = (Color *)displacementImage.data;
+
+    // Convertir l'image en niveaux de gris
+    for (int y = 0; y < height; y++) {
+        for (int x = 0; x < width; x++) {
+            Color inputColor = inputPixels[y * width + x];
+            // Calculer la valeur en niveaux de gris en utilisant les coefficients de luminosité
+            unsigned char gray = (unsigned char)(inputColor.r * 0.3f + inputColor.g * 0.59f + inputColor.b * 0.11f);
+            displacementPixels[y * width + x] = { gray, gray, gray, 255 };
+        }
+    }
+
+    // Libérer les ressources
+    UnloadImageColors(inputPixels);
+    UnloadImage(resizedImage);  // Libérer l'image redimensionnée
+
+    return displacementImage;
 }
 

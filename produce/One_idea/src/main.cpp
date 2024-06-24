@@ -5,10 +5,9 @@
 
 Scene3D scene;
 
-float scaleFactor = 0.018f;
-float displacementScale = -0.25f;
+float scaleFactor = 0.019f;
+float displacementScale = -0.3f; //0.2
 int step = 3;
-
 
 float totalRotation = 10.0f;
 float rotationSpeed = 0.005f;
@@ -20,7 +19,7 @@ int main()
 {
     InitWindow(1750, 1050, "Displacement Map Generation");
 
-    Image image = LoadImage("ressources/images/d.png");
+    Image image = LoadImage("ressources/images/b.png");
     Image displacement = GenerateDisplacementMap(image, ImageWidth, ImageHeight);
 
     ExportImage(displacement, "ressources/displacement/displacement.png");
