@@ -32,68 +32,68 @@ L'idée est que chaque point soit generer en fonction du fichier binaire :
 
 process photo --> fichier binaire --> son --> point cloud binary --> point cloud displacement map 
 
-Le nuage de point binaire t le nuage de point displacement map n'auros pas la meme construction car car a chaque son generer c'est une données binaire qui est traité donc le nuage de point binary avancera en meme temps que le son mais le nuage de point displacement n'auras pas la meme temporalité car il traite les pixels. 
-
-
-
-
-╔═══════════════════════════╗
-║      📸 Capture de l'image║
-║     (Caméra, Scanner)     ║
-╚═════════════════╦═════════╝
-                  │
-                  ▼
-╔═══════════════════════════╗
-║ 🌈 Pixels bruts           ║
-║    (R, G, B valeurs)      ║
-╚═════════════════╦═════════╝
-                  │
-                  ▼
-╔═══════════════════════════╗
-║ ⚪ Conversion en niveaux  ║
-║       de gris (facultatif)║
-║ Y = 0.3R + 0.59G + 0.11B  ║
-╚═════════════════╦═════════╝
-                  │
-                  ▼
-╔═══════════════════════════╗
-║ 🔢 Quantification des     ║
-║ niveaux de gris/couleurs  ║
-║      (256 niveaux)        ║
-╚═════════════════╦═════════╝
-                  │
-                  ▼
-╔═══════════════════════════╗
-║ 📊 Matrice de valeurs     ║
-║ (Grayscale ou couleur)    ║
-╚═════════════════╦═════════╝
-                  │
-                  ▼
-╔═══════════════════════════╗
-║ 💾 Compression de l'image ║
-║     (facultatif)          ║
-║     (ex: JPEG, PNG)       ║
-╚═════════════════╦═════════╝
-                  │
-                  ▼
-╔═══════════════════════════╗
-║  📝 Encodage en binaire   ║
-║(Bits par pixel, par compo)║
-╚═════════════════╦═════════╝
-                  │
-                  ▼
-╔═══════════════════════════╗
-║ 💻 Fichier binaire final  ║
-║        (les 0 et les 1)   ║
-╚═════════════════╦═════════╝
-                  │
-                  ▼
-╔═══════════════════════════╗
-║ 🖼️ Affichage de l'image   ║
-║    avec logiciel adapté   ║
-╚═══════════════════════════╝
-
-
+Le nuage de point binaire t le nuage de point displacement map n'auros pas la meme construction car car a chaque son generer c'est une données binaire qui est traité donc le nuage de point binary avancera en meme temps que le son mais le nuage de point displacement n'auras pas la meme temporalité car il traite les pixels.   
+  
+  
+  
+  
+╔═══════════════════════════╗  
+║      📸 Capture de l'image║  
+║     (Caméra, Scanner)     ║  
+╚═════════════════╦═════════╝  
+                  │  
+                  ▼  
+╔═══════════════════════════╗  
+║ 🌈 Pixels bruts           ║  
+║    (R, G, B valeurs)      ║  
+╚═════════════════╦═════════╝  
+                  │  
+                  ▼  
+╔═══════════════════════════╗  
+║ ⚪ Conversion en niveaux  ║  
+║       de gris (facultatif)║  
+║ Y = 0.3R + 0.59G + 0.11B  ║  
+╚═════════════════╦═════════╝  
+                  │  
+                  ▼  
+╔═══════════════════════════╗  
+║ 🔢 Quantification des     ║  
+║ niveaux de gris/couleurs  ║  
+║      (256 niveaux)        ║  
+╚═════════════════╦═════════╝  
+                  │  
+                  ▼  
+╔═══════════════════════════╗  
+║ 📊 Matrice de valeurs     ║  
+║ (Grayscale ou couleur)    ║  
+╚═════════════════╦═════════╝  
+                  │  
+                  ▼  
+╔═══════════════════════════╗  
+║ 💾 Compression de l'image ║  
+║     (facultatif)          ║  
+║     (ex: JPEG, PNG)       ║  
+╚═════════════════╦═════════╝  
+                  │  
+                  ▼  
+╔═══════════════════════════╗  
+║  📝 Encodage en binaire   ║  
+║(Bits par pixel, par compo)║  
+╚═════════════════╦═════════╝  
+                  │  
+                  ▼  
+╔═══════════════════════════╗  
+║ 💻 Fichier binaire final  ║  
+║        (les 0 et les 1)   ║  
+╚═════════════════╦═════════╝  
+                  │  
+                  ▼  
+╔═══════════════════════════╗  
+║ 🖼️ Affichage de l'image   ║  
+║    avec logiciel adapté   ║  
+╚═══════════════════════════╝  
+  
+  
 Ma question a propot de tout cela aujourd'hui est, est-il poissible d'inverser ce processus ? 
 
 
