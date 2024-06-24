@@ -35,7 +35,7 @@ process photo --> fichier binaire --> son --> point cloud binary --> point cloud
 Le nuage de point binaire t le nuage de point displacement map n'auros pas la meme construction car car a chaque son generer c'est une données binaire qui est traité donc le nuage de point binary avancera en meme temps que le son mais le nuage de point displacement n'auras pas la meme temporalité car il traite les pixels.   
   
   
-  
+ ``` 
   
 ╔═══════════════════════════╗  
 ║📸 Capture de l'image      ║   
@@ -93,6 +93,8 @@ Le nuage de point binaire t le nuage de point displacement map n'auros pas la me
 ║    avec logiciel adapté   ║  
 ╚═══════════════════════════╝  
   
+  
+```
   
 Ma question a propot de tout cela aujourd'hui est, est-il poissible d'inverser ce processus ? 
 
