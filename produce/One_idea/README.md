@@ -138,5 +138,90 @@ Starting from this idea I decided to create a process of data treatment which wi
 
 ![Sketch process](./ressources/data_Read/sketch.jpeg)
 
+
+The idea is that each point is generated according to the binary file:
+
+process photo --> binary file --> sound --> point cloud binary --> point cloud displacement map
+
+The binary point cloud and the displacement point cloud map won't have the same construction, because each time a sound is generated, a binary data is processed, so the binary point cloud will advance at the same time as the sound, but the displacement point cloud won't have the same temporality, because it processes pixels and will be built much more slowly!
+
+```
+
+╔════════════════════════════════════╗
+║   Capture de l'image               ║
+║   (caméra, scanner, etc.)          ║
+
+--------------------------------------
+
+  ║                                    ║
+  ║   ╔════════════════════════════╗   ║
+  ║   ║       Pixels bruts         ║   ║
+  ║   ║   (R, G, B valeurs par     ║   ║
+  ║   ║      pixel)                ║   ║
+  ║   ╚════════════════════════════╝   ║
+
+  --------------------------------------
+
+     ║                                    ║
+     ║   ╔════════════════════════════╗   ║
+     ║   ║       Conversion en        ║   ║
+     ║   ║        niveaux de gris     ║   ║
+     ║   ║      (facultatif)          ║   ║
+     ║   ║   (Y = 0.3*R + 0.59*G +    ║   ║
+     ║   ║         0.11*B)            ║   ║
+     ║   ╚════════════════════════════╝   ║
+
+     --------------------------------------
+
+         ║                                    ║
+         ║   ╔════════════════════════════╗   ║
+         ║   ║   Quantification des       ║   ║
+         ║   ║    niveaux de gris/couleurs║   ║
+         ║   ║      (256 niveaux, etc.)   ║   ║
+         ║   ╚════════════════════════════╝   ║
+
+         --------------------------------------
+
+             ║                                    ║
+             ║   ╔════════════════════════════╗   ║
+             ║   ║      Matrice de valeurs    ║   ║
+             ║   ║   (grayscale ou couleur)   ║   ║
+             ║   ╚════════════════════════════╝   ║
+
+             --------------------------------------
+
+                 ║                                    ║
+                 ║   ╔════════════════════════════╗   ║
+                 ║   ║      Compression           ║   ║
+                 ║   ║     (facultatif)           ║   ║
+                 ║   ║      (ex: JPEG, PNG)       ║   ║
+                 ║   ╚════════════════════════════╝   ║
+
+                 --------------------------------------
+
+            ║                                    ║
+            ║   ╔════════════════════════════╗   ║
+            ║   ║      Encodage en binaire   ║   ║
+            ║   ║   (bits par pixel, par     ║   ║
+            ║   ║        composante)         ║   ║
+            ║   ╚════════════════════════════╝   ║
+
+            --------------------------------------
+
+        ║                                    ║
+        ║   ╔════════════════════════════╗   ║
+        ║   ║      Fichier binaire final ║   ║
+        ║   ║         (les 0 et les 1)   ║   ║
+        ║   ╚════════════════════════════╝   ║
+        ║                                    ║
+        ║                                    ║
+        ╚════════════════════════════════════╝
+
+
+```
+
+Also in this notion of temporality, as the images taken are renewed in "pernanence", the form and interpretation of the data will also change in "pernanence". This whole installation gives a point of view on how the computer can interpret "o-machine" data and retranscribe it to us through time!
+
+
 My question in the light of all this today is, is it possible to reverse this process?
 
