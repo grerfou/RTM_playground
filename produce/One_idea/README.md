@@ -225,3 +225,12 @@ Also in this notion of temporality, as the images taken are renewed in "pernanen
 
 My question in the light of all this today is, is it possible to reverse this process?
 
+
+
+
+
+# Current program 
+
+
+
+![Program point cloud displacement map](./ressources/data_Read/b.mp4)
