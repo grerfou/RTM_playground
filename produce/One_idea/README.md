@@ -36,70 +36,76 @@ Le nuage de point binaire t le nuage de point displacement map n'auros pas la me
   
   
  ``` 
-  📸 Capture de l'image
-    ├── (caméra, scanner, etc.)
-    │
-    v
-🎨 Pixels bruts
-    ├── (R, G, B valeurs par pixel)
-    │
-    v
-⚪ Conversion en niveaux de gris (facultatif)
-    ├── (Y = 0.3*R + 0.59*G + 0.11*B)
-    │
-    v
-🔧 Quantification des niveaux de gris/couleurs
-    ├── (256 niveaux, etc.)
-    │
-    v
-🧩 Matrice de valeurs
-    ├── (grayscale ou couleur)
-    │
-    v
-💾 Compression (facultatif)
-    ├── (ex: JPEG, PNG)
-    │
-    v
-🔢 Encodage en binaire
-    ├── (bits par pixel, par composante)
-    │
-    v
-📁 Fichier binaire final
-    ├── (les 0 et les 1)
-    │
-    v
-💻 Ouverture avec votre logiciel préféré
- 📸 Capture de l'image
-    ├── (caméra, scanner, etc.)
-    │
-    v
-🎨 Pixels bruts
-    ├── (R, G, B valeurs par pixel)
-    │
-    v
-⚪ Conversion en niveaux de gris (facultatif)
-    ├── (Y = 0.3*R + 0.59*G + 0.11*B)
-    │
-    v
-🔧 Quantification des niveaux de gris/couleurs
-    ├── (256 niveaux, etc.)
-    │
-    v
-🧩 Matrice de valeurs
-    ├── (grayscale ou couleur)
-    │
-    v
-💾 Compression (facultatif)
-    ├── (ex: JPEG, PNG)
-    │
-    v
-🔢 Encodage en binaire
-    ├── (bits par pixel, par composante)
-    │
-    v
-📁 Fichier binaire final
-    ├── (les 0 et les 1)
-  
+╔════════════════════════════════════╗
+║   Capture de l'image               ║
+║   (caméra, scanner, etc.)          ║
+
+--------------------------------------
+
+   ║                                    ║
+   ║   ╔════════════════════════════╗   ║
+   ║   ║       Pixels bruts         ║   ║
+   ║   ║   (R, G, B valeurs par     ║   ║
+   ║   ║      pixel)                ║   ║
+   ║   ╚════════════════════════════╝   ║
+
+   --------------------------------------
+
+      ║                                    ║
+      ║   ╔════════════════════════════╗   ║
+      ║   ║       Conversion en        ║   ║
+      ║   ║        niveaux de gris     ║   ║
+      ║   ║      (facultatif)          ║   ║
+      ║   ║   (Y = 0.3*R + 0.59*G +    ║   ║
+      ║   ║         0.11*B)            ║   ║
+      ║   ╚════════════════════════════╝   ║
+
+      --------------------------------------
+
+          ║                                    ║
+          ║   ╔════════════════════════════╗   ║
+          ║   ║   Quantification des       ║   ║
+          ║   ║    niveaux de gris/couleurs║   ║
+          ║   ║      (256 niveaux, etc.)   ║   ║
+          ║   ╚════════════════════════════╝   ║
+
+          --------------------------------------
+
+              ║                                    ║
+              ║   ╔════════════════════════════╗   ║
+              ║   ║      Matrice de valeurs    ║   ║
+              ║   ║   (grayscale ou couleur)   ║   ║
+              ║   ╚════════════════════════════╝   ║
+
+              --------------------------------------
+
+                  ║                                    ║
+                  ║   ╔════════════════════════════╗   ║
+                  ║   ║      Compression           ║   ║
+                  ║   ║     (facultatif)           ║   ║
+                  ║   ║      (ex: JPEG, PNG)       ║   ║
+                  ║   ╚════════════════════════════╝   ║
+
+                  --------------------------------------
+
+             ║                                    ║
+             ║   ╔════════════════════════════╗   ║
+             ║   ║      Encodage en binaire   ║   ║
+             ║   ║   (bits par pixel, par     ║   ║
+             ║   ║        composante)         ║   ║
+             ║   ╚════════════════════════════╝   ║
+
+             --------------------------------------
+
+         ║                                    ║
+         ║   ╔════════════════════════════╗   ║
+         ║   ║      Fichier binaire final ║   ║
+         ║   ║         (les 0 et les 1)   ║   ║
+         ║   ╚════════════════════════════╝   ║
+         ║                                    ║
+         ║                                    ║
+         ╚════════════════════════════════════╝
+
 ```
   
 Ma question a propot de tout cela aujourd'hui est, est-il poissible d'inverser ce processus ? 
