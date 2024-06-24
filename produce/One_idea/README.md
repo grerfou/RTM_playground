@@ -35,78 +35,79 @@ process photo --> fichier binaire --> son --> point cloud binary --> point cloud
 Le nuage de point binaire et le nuage de point displacement map n'aurons pas la meme construction car a chaque son generer c'est une données binaire qui est traité donc le nuage de point binary avancera en meme temps que le son mais le nuage de point displacement n'auras pas la meme temporalité car il traite les pixels et sera construt beaucoup plus lentement ! 
   
   
- ``` 
-╔════════════════════════════════════╗
-║   Capture de l'image               ║
-║   (caméra, scanner, etc.)          ║
+
+```
+
+                            ╔════════════════════════════════════╗
+                            ║   Image Capture                    ║    ---> Level 1
+                            ║   (camera, scanner, etc.)          ║   
+
+                        --------------------------------------
+
+                        ║                                    ║
+                        ║   ╔════════════════════════════╗   ║
+                        ║   ║      Raw Pixels            ║   ║    ---> Level 2
+                        ║   ║  (R, G, B values per pixel)║   ║
+                        ║   ╚════════════════════════════╝   ║
+
+                    --------------------------------------
+
+                    ║                                    ║
+                    ║   ╔════════════════════════════╗   ║
+                    ║   ║      Grayscale Conversion  ║   ║
+                    ║   ║      (optional)            ║   ║   ---> Level 3
+                    ║   ║   (Y = 0.3*R + 0.59*G +    ║   ║
+                    ║   ║        0.11*B)             ║   ║
+                    ║   ╚════════════════════════════╝   ║
+                    ║                                    ║
+
+                --------------------------------------
+
+                ║   ╔════════════════════════════╗   ║
+                ║   ║  Quantization of Grayscale ║   ║
+                ║   ║       /Colors              ║   ║   ---> Level 4
+                ║   ║     (256 levels, etc.)     ║   ║
+                ║   ╚════════════════════════════╝   ║
+                ║                                    ║
+
+            --------------------------------------
+
+            ║   ╔════════════════════════════╗   ║
+            ║   ║      Value Matrix          ║   ║   ---> Level 5 
+            ║   ║   (grayscale or color)     ║   ║
+            ║   ╚════════════════════════════╝   ║
+
+        --------------------------------------
+
+        ║                                    ║
+        ║   ╔════════════════════════════╗   ║
+        ║   ║      Compression           ║   ║
+        ║   ║     (optional)             ║   ║   ---> Level 6
+        ║   ║      (e.g., JPEG, PNG)     ║   ║
+        ║   ╚════════════════════════════╝   ║
+
+    --------------------------------------
+
+    ║                                    ║
+    ║   ╔════════════════════════════╗   ║
+    ║   ║      Binary Encoding       ║   ║
+    ║   ║   (bits per pixel, per     ║   ║   ---> Level 7
+    ║   ║        component)          ║   ║
+    ║   ╚════════════════════════════╝   ║
 
 --------------------------------------
 
-   ║                                    ║
-   ║   ╔════════════════════════════╗   ║
-   ║   ║       Pixels bruts         ║   ║
-   ║   ║   (R, G, B valeurs par     ║   ║
-   ║   ║      pixel)                ║   ║
-   ║   ╚════════════════════════════╝   ║
+║                                    ║
+║   ╔════════════════════════════╗   ║
+║   ║      Final Binary File     ║   ║   ---> Level 8
+║   ║        (0s and 1s)         ║   ║
+║   ╚════════════════════════════╝   ║
+╚════════════════════════════════════╝
 
-   --------------------------------------
-
-      ║                                    ║
-      ║   ╔════════════════════════════╗   ║
-      ║   ║       Conversion en        ║   ║
-      ║   ║        niveaux de gris     ║   ║
-      ║   ║      (facultatif)          ║   ║
-      ║   ║   (Y = 0.3*R + 0.59*G +    ║   ║
-      ║   ║         0.11*B)            ║   ║
-      ║   ╚════════════════════════════╝   ║
-
-      --------------------------------------
-
-          ║                                    ║
-          ║   ╔════════════════════════════╗   ║
-          ║   ║   Quantification des       ║   ║
-          ║   ║    niveaux de gris/couleurs║   ║
-          ║   ║      (256 niveaux, etc.)   ║   ║
-          ║   ╚════════════════════════════╝   ║
-
-          --------------------------------------
-
-              ║                                    ║
-              ║   ╔════════════════════════════╗   ║
-              ║   ║      Matrice de valeurs    ║   ║
-              ║   ║   (grayscale ou couleur)   ║   ║
-              ║   ╚════════════════════════════╝   ║
-
-              --------------------------------------
-
-                  ║                                    ║
-                  ║   ╔════════════════════════════╗   ║
-                  ║   ║      Compression           ║   ║
-                  ║   ║     (facultatif)           ║   ║
-                  ║   ║      (ex: JPEG, PNG)       ║   ║
-                  ║   ╚════════════════════════════╝   ║
-
-                  --------------------------------------
-
-             ║                                    ║
-             ║   ╔════════════════════════════╗   ║
-             ║   ║      Encodage en binaire   ║   ║
-             ║   ║   (bits par pixel, par     ║   ║
-             ║   ║        composante)         ║   ║
-             ║   ╚════════════════════════════╝   ║
-
-             --------------------------------------
-
-         ║                                    ║
-         ║   ╔════════════════════════════╗   ║
-         ║   ║      Fichier binaire final ║   ║
-         ║   ║         (les 0 et les 1)   ║   ║
-         ║   ╚════════════════════════════╝   ║
-         ║                                    ║
-         ║                                    ║
-         ╚════════════════════════════════════╝
 
 ```
+
+
 
 Aussi dans cette notion de temporalité vu que les images prises sont renouveler en " pernanence " la forme et l'interpretation des données changera aussi en " pernanence " tout cette installation donne un point de vue sur comment l'ordinateur peut interpreter des données de "o-machine" et nous les retranscrire a travert le temps ! 
   
@@ -146,77 +147,71 @@ process photo --> binary file --> sound --> point cloud binary --> point cloud d
 The binary point cloud and the displacement point cloud map won't have the same construction, because each time a sound is generated, a binary data is processed, so the binary point cloud will advance at the same time as the sound, but the displacement point cloud won't have the same temporality, because it processes pixels and will be built much more slowly!
 
 ```
+                            ╔════════════════════════════════════╗
+                            ║   Image Capture                    ║    ---> Level 1
+                            ║   (camera, scanner, etc.)          ║   
 
-╔════════════════════════════════════╗
-║   Capture de l'image               ║
-║   (caméra, scanner, etc.)          ║
+                        --------------------------------------
 
---------------------------------------
+                        ║                                    ║
+                        ║   ╔════════════════════════════╗   ║
+                        ║   ║      Raw Pixels            ║   ║    ---> Level 2
+                        ║   ║  (R, G, B values per pixel)║   ║
+                        ║   ╚════════════════════════════╝   ║
 
-  ║                                    ║
-  ║   ╔════════════════════════════╗   ║
-  ║   ║       Pixels bruts         ║   ║
-  ║   ║   (R, G, B valeurs par     ║   ║
-  ║   ║      pixel)                ║   ║
-  ║   ╚════════════════════════════╝   ║
+                    --------------------------------------
 
-  --------------------------------------
+                    ║                                    ║
+                    ║   ╔════════════════════════════╗   ║
+                    ║   ║      Grayscale Conversion  ║   ║
+                    ║   ║      (optional)            ║   ║   ---> Level 3
+                    ║   ║   (Y = 0.3*R + 0.59*G +    ║   ║
+                    ║   ║        0.11*B)             ║   ║
+                    ║   ╚════════════════════════════╝   ║
+                    ║                                    ║
 
-     ║                                    ║
-     ║   ╔════════════════════════════╗   ║
-     ║   ║       Conversion en        ║   ║
-     ║   ║        niveaux de gris     ║   ║
-     ║   ║      (facultatif)          ║   ║
-     ║   ║   (Y = 0.3*R + 0.59*G +    ║   ║
-     ║   ║         0.11*B)            ║   ║
-     ║   ╚════════════════════════════╝   ║
+                --------------------------------------
 
-     --------------------------------------
-
-         ║                                    ║
-         ║   ╔════════════════════════════╗   ║
-         ║   ║   Quantification des       ║   ║
-         ║   ║    niveaux de gris/couleurs║   ║
-         ║   ║      (256 niveaux, etc.)   ║   ║
-         ║   ╚════════════════════════════╝   ║
-
-         --------------------------------------
-
-             ║                                    ║
-             ║   ╔════════════════════════════╗   ║
-             ║   ║      Matrice de valeurs    ║   ║
-             ║   ║   (grayscale ou couleur)   ║   ║
-             ║   ╚════════════════════════════╝   ║
-
-             --------------------------------------
-
-                 ║                                    ║
-                 ║   ╔════════════════════════════╗   ║
-                 ║   ║      Compression           ║   ║
-                 ║   ║     (facultatif)           ║   ║
-                 ║   ║      (ex: JPEG, PNG)       ║   ║
-                 ║   ╚════════════════════════════╝   ║
-
-                 --------------------------------------
-
-            ║                                    ║
-            ║   ╔════════════════════════════╗   ║
-            ║   ║      Encodage en binaire   ║   ║
-            ║   ║   (bits par pixel, par     ║   ║
-            ║   ║        composante)         ║   ║
-            ║   ╚════════════════════════════╝   ║
+                ║   ╔════════════════════════════╗   ║
+                ║   ║  Quantization of Grayscale ║   ║
+                ║   ║       /Colors              ║   ║   ---> Level 4
+                ║   ║     (256 levels, etc.)     ║   ║
+                ║   ╚════════════════════════════╝   ║
+                ║                                    ║
 
             --------------------------------------
 
+            ║   ╔════════════════════════════╗   ║
+            ║   ║      Value Matrix          ║   ║   ---> Level 5 
+            ║   ║   (grayscale or color)     ║   ║
+            ║   ╚════════════════════════════╝   ║
+
+        --------------------------------------
+
         ║                                    ║
         ║   ╔════════════════════════════╗   ║
-        ║   ║      Fichier binaire final ║   ║
-        ║   ║         (les 0 et les 1)   ║   ║
+        ║   ║      Compression           ║   ║
+        ║   ║     (optional)             ║   ║   ---> Level 6
+        ║   ║      (e.g., JPEG, PNG)     ║   ║
         ║   ╚════════════════════════════╝   ║
-        ║                                    ║
-        ║                                    ║
-        ╚════════════════════════════════════╝
 
+    --------------------------------------
+
+    ║                                    ║
+    ║   ╔════════════════════════════╗   ║
+    ║   ║      Binary Encoding       ║   ║
+    ║   ║   (bits per pixel, per     ║   ║   ---> Level 7
+    ║   ║        component)          ║   ║
+    ║   ╚════════════════════════════╝   ║
+
+--------------------------------------
+
+║                                    ║
+║   ╔════════════════════════════╗   ║
+║   ║      Final Binary File     ║   ║   ---> Level 8
+║   ║        (0s and 1s)         ║   ║
+║   ╚════════════════════════════╝   ║
+╚════════════════════════════════════╝
 
 ```
 
