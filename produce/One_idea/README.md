@@ -32,7 +32,7 @@ L'idée est que chaque point soit generer en fonction du fichier binaire :
 
 process photo --> fichier binaire --> son --> point cloud binary --> point cloud displacement map 
 
-Le nuage de point binaire t le nuage de point displacement map n'auros pas la meme construction car car a chaque son generer c'est une données binaire qui est traité donc le nuage de point binary avancera en meme temps que le son mais le nuage de point displacement n'auras pas la meme temporalité car il traite les pixels.   
+Le nuage de point binaire et le nuage de point displacement map n'aurons pas la meme construction car a chaque son generer c'est une données binaire qui est traité donc le nuage de point binary avancera en meme temps que le son mais le nuage de point displacement n'auras pas la meme temporalité car il traite les pixels et sera construt beaucoup plus lentement ! 
   
   
  ``` 
@@ -107,6 +107,8 @@ Le nuage de point binaire t le nuage de point displacement map n'auros pas la me
          ╚════════════════════════════════════╝
 
 ```
+
+Aussi dans cette notion de temporalité vu que les images prises sont renouveler en " pernanence " la forme et l'interpretation des données changera aussi en " pernanence " tout cette installation donne un point de vue sur comment l'ordinateur peut interpreter des données de "o-machine" et nous les retranscrire a travert le temps ! 
   
 Ma question a propot de tout cela aujourd'hui est, est-il poissible d'inverser ce processus ? 
 
