@@ -38,7 +38,7 @@ Le nuage de point binaire t le nuage de point displacement map n'auros pas la me
   
   
 ╔═══════════════════════════╗  
-║      📸 Capture de l'image║  
+║      📸 Capture de l'image║   
 ║     (Caméra, Scanner)     ║  
 ╚═════════════════╦═════════╝  
                   │  
